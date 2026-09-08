@@ -54,7 +54,7 @@ resource "aws_ami_from_instance" "main" {
     local.common_tags
   )
 }
-
+/* 
 resource "aws_launch_template" "main" {
   name = "${local.common_name}"
 
@@ -203,4 +203,4 @@ resource "terraform_data" "main_delete" {
   provisioner "local-exec" {
     command = "aws ec2 terminate-instances --instance-ids ${aws_instance.main.id}"
   }
-}
+} */
