@@ -54,7 +54,7 @@ resource "aws_ami_from_instance" "main" {
     local.common_tags
   )
 }
-/* 
+
 resource "aws_launch_template" "main" {
   name = "${local.common_name}"
 
@@ -192,7 +192,7 @@ resource "aws_lb_listener_rule" "main" {
     }
   }
 }
-
+/*
 resource "terraform_data" "main_delete" {
   triggers_replace = [
     aws_instance.main.id
